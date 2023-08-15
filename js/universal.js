@@ -32,14 +32,52 @@
                     <li id="footer-title">Diphda Medical</li>
                 </div>
                 <div class="footer-right">
-                    <li id="footer-title">Contact Us</li>
+                    <li onclick="openContact()" id="footer-title">Contact Us</li>
                     <p id="footer-contact">Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit.<br></br>Nunc vulputate libero et velit<br></br>interdum, ac aliquet odio<br></br>mattis.</p>
                 </div>
             </div>
         </div>
         `;
         document.getElementById("footer-main").innerHTML = footerMain;
-
+        let contact = `
+        <div id="contact-overlay">
+            <button id="close-contact" onclick="closeContact()">
+                <img src="./assets/imgs/close.svg"></img>
+            </button>
+            <p class="contact-title">Contact Us</p>
+            <div id="contact-container">
+                <div class="contact-option">
+                    <img src="assets/imgs/phone.svg"></img>
+                    <p class="contact-subtitle">Call Us</p>
+                    <p>123-456-7890</p>
+                </div>
+                <div class="contact-option">
+                    <img src="assets/imgs/email.svg"></img>
+                    <p class="contact-subtitle">Email Us</p>
+                    <p>loremipsum@gmail.com</p>
+                </div>
+            </div>
+            <p class="contact-title">Send us a message</p>
+            <div id="contact-form">
+                <form>
+                    <div class="contact-column">
+                        <p class="contact-text">Name</p>
+                        <input name="Name" type="text" placeholder="Enter Name" required>
+                    </div>
+                    <div class="contact-column">
+                        <p class="contact-text">Email Address</p>
+                        <input name="Email" type="email" placeholder="Enter Email Address" required>
+                    </div>
+                    <p class="contact-text">Inquiry</p>
+                    <textarea id="contact-inquiry" name="Inquiry" placeholder="Enter Your Inquiry" required></textarea>
+                    <div id="contact-send">
+                        <li onclick="closeContact()" class="button-container" id="sendb">Send</li>
+                    </div>
+                </form>
+            </div>
+        </div>
+        `;
+        document.getElementById("contact").innerHTML = contact;
 
     }
 })();
