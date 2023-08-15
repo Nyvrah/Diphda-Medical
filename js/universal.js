@@ -17,7 +17,7 @@
                     
                 </div>
                 <div id="menu-right">
-                    <li class="button-container", id="contactb">Contact Us</li>
+                    <li onclick="openContact()" class="button-container", id="contactb">Contact Us</li>
                 </div>
                 <script async src="universal.js"></script> 
             </div>
@@ -57,3 +57,11 @@ window.addEventListener('scroll', function(){
         document.querySelector("#menu").style.background = "";
     }
 })
+
+function openContact() {
+    document.getElementById("contact").style.display = "block";
+}
+
+function closeContact() {
+    document.getElementById("contact").style.display = "none";
+}

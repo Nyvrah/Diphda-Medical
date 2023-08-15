@@ -37,7 +37,6 @@ head, body {
 
 .column {
     text-align: center;
-    list-style-type:circle; 
     width: 300px;
     border: 2px solid #9F9EC2;
     padding: 30px;
