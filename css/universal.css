@@ -173,8 +173,18 @@ p {
 
 .footer-left{
   position:absolute;
-  top:45%;
+  top:100px;
   left:5%;
+}
+
+#logo-header {
+  height: 75px;
+  width:75px;
+}
+
+#logo-footer {
+  height: 150px;
+  width:150px;
 }
 
 #footer-main {
@@ -391,3 +401,4 @@ textarea {
 #sendb:hover {
   background-color: #a67dff;
 }
+
